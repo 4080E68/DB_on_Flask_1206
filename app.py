@@ -23,7 +23,7 @@ def upload():
     db.session.add(newFile)
     db.session.commit()
 
-    return 'Saved' + file.filename + 'to the database!'
+    return 'Saved:' + file.filename + 'to the database!'
 
 
 if __name__ == '__main__':

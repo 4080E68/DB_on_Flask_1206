@@ -1,0 +1,30 @@
+.a{
+    color: rgb(15, 187, 130);
+    font-size: 50px;
+    
+}
+.button {
+    background-color: #4c87af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 250px;
+  }
+  .button:hover {
+    background-color: #90b0be
+  }
+  .button:active {
+    background-color: #8ac4d6;
+    box-shadow: 0 5px rgb(145, 135, 135);
+    transform: translateY(4px);
+  }
+body{
+    background-color: rgb(208, 209, 138);
+}

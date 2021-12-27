@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+
     <title>File input Example </title>
 
 
 <body>
     <div class="container">
-        <h1>File input</h1>
-        <form method="POST" action="/upload"
-                        enctype="multipart/form-data">
+        <h1 class="a">File input</h1>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="inputFile">File input</label>
-            <input type="file" name="inputFile">
+            <label for="inputFile" class="a">File input</label>
+            <input type="file"  name="inputFile"><br><br>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="button ">Submit</button>
         </form>
     </div>
 </body>
