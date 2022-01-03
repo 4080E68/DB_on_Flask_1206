@@ -23,7 +23,7 @@ def upload():
     db.session.add(newFile)
     db.session.commit()
 
-    return 'Saved:' + file.filename + 'to the database!'
+    return render_template("result.html",filename=file.filename)#'<h1> Saved:' + file.filename + 'to the database!</h1>'
 
 
 if __name__ == '__main__':

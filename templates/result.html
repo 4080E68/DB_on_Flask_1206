@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>result</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles1.css')}}">
+</head>
+<body>
+ 
+    <header>
+        <div class="container">
+        <div id="brandname">
+        </div>
+        <h2>上傳檔案</h2>
+    </div>
+    </header>
+ 
+    <div class="results">
+    {% if filename !=""   %}
+    <h2 style="color:red;">上傳: {{ filename }}</h2>
+    {% else  %}
+    <h2 style="color:blue;">未選擇任何檔案</h2>
+    {% endif %}
+    <form>
+    <input class="button" type="button" value="back" onclick="location.href='/'">
+    </form>
+    </div>
+ 
+</body>
+</html>
